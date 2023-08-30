@@ -72,17 +72,21 @@ app.get("/dogs", (req, res) => {
       res.send(dogs);
     });
 
-    app.post("/dogs", (req, res) => {
-        let newDog = req.body;
-        dogs.push(newDog);
-        fs.writeFile('./dogs.json', JSON.stringify(dogs), (err) => {
-            if (err) {
-                console.error('Error writing file:', err);
-                res.status(500).send('Error writing file');
-                return;
+app.post("/dogs", (req, res) => {
+    let newDog = req.body;
+    dogs.push(newDog);
+    fs.writeFile('./dogs.json', JSON.stringify(dogs), (err) => {
+        if (err) {
+            console.error('Error writing file:', err);
+            res.status(500).send('Error writing file');
+            return;
             }
-            res.sendStatus(200);
-        });
+        res.sendStatus(200);
     });
+});
 
+app.get("/random", (req, res) => {
+    const randomDogs = dogs[Math.floor(Math.random() * dogs.length)]
   
+    res.send(randomDogs);
+  });
