@@ -1,0 +1,41 @@
+frågor
+
+1.2.1
+Paas
+
+1.2.2
+SaaS
+
+1.2.3
+IaaS
+
+1.3
+done
+
+1.4
+AWS App Runner
+Batch
+EC2
+EC2 Image Builder
+Elastic Beanstalk
+Lambda
+Lightsail
+AWS Outposts
+Serverless Application Repository
+AWS SimSpace Weaver
+
+1.5
+AWS Backup
+EFS
+AWS Elastic Disaster Recovery
+FSx
+S3
+S3 Glacier
+Storage Gateway
+
+1.6
+säkerheten samt ekonomiskt
+
+1.7
+det är molntjänsten, att man inte har en "egen" server
+
